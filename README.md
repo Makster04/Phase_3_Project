@@ -1,88 +1,64 @@
 # Phase_3_Project
 
-## Recession Predictor (Good to tell if you should sell your stock)
+For a machine learning project focused on predicting the best time to sell stock, you can utilize a variety of datasets related to stock prices, financial indicators, and market news. Here are some datasets and sources you can consider:
 
+### 1. **Yahoo Finance API (or Yahoo Finance Data)**
+   - **Data:** Historical stock prices, volume, dividends, and stock splits.
+   - **Use case:** This is a great source for stock price data. You can analyze historical price movements and potentially identify patterns that predict when it's best to sell.
+   - **Link:** [Yahoo Finance](https://www.yahoo.com/finance/)
+   - You can also use libraries like `yfinance` in Python to pull this data programmatically.
 
-Creating a **Recession Predictor** using machine learning to assist people in determining when to sell their stocks would require a combination of economic, financial, and market data to train the model. Here are some useful datasets and types of information that would be beneficial for the project:
+### 2. **Alpha Vantage API**
+   - **Data:** Real-time and historical stock data, technical indicators, forex, and cryptocurrency data.
+   - **Use case:** They provide both stock prices and technical indicators, which are essential for predicting stock price movements.
+   - **Link:** [Alpha Vantage](https://www.alphavantage.co/)
+   - They offer a free tier that gives up to 500 requests per day.
 
-### 1. **Macroeconomic Data** (Economic Indicators)
-- **Gross Domestic Product (GDP)**: A decline in GDP over two consecutive quarters is often considered a recession. Track quarterly GDP growth rates.
-- **Unemployment Rate**: High or rising unemployment is a common sign of a recession.
-- **Consumer Price Index (CPI)**: Measures inflation. High inflation can indicate an economic downturn, but hyperinflation can lead to a recession.
-- **Interest Rates**: The Federal Reserve's interest rates can indicate economic trends. An inverted yield curve (short-term rates higher than long-term rates) can be a sign of an impending recession.
-- **Retail Sales**: A drop in consumer spending often signals a weakening economy.
-- **Manufacturing and Industrial Production**: Declining output in manufacturing sectors often suggests a slowdown in the economy.
-- **Business Investment Data**: Falling investment can indicate businesses anticipate tough economic conditions.
-  
-### 2. **Stock Market Data**
-- **Stock Indices (e.g., S&P 500, Dow Jones, NASDAQ)**: Historical performance of major stock indices is crucial. You would want data such as:
-  - Daily, weekly, and monthly returns
-  - Price-to-earnings (P/E) ratios
-  - Moving averages (e.g., 50-day, 200-day)
-  - Market volatility (VIX Index)
-- **Individual Stock Data**: Historical prices and technical indicators (e.g., moving averages, Bollinger Bands).
-  
-### 3. **Corporate Earnings Data**
-- **Earnings Reports (Quarterly/Annual)**: Look for trends in corporate earnings. Declining earnings across sectors can signal economic contraction.
-- **Earnings Surprises**: If a company's earnings consistently miss analyst expectations, this could be an early sign of trouble.
+### 3. **Quandl**
+   - **Data:** Financial, economic, and alternative data, including stock prices, company fundamentals, and macroeconomic indicators.
+   - **Use case:** Quandl provides comprehensive financial data that you can use to develop machine learning models to predict stock trends.
+   - **Link:** [Quandl](https://www.quandl.com/)
+   - Some data sets are free, and others require a subscription.
 
-### 4. **Sentiment and Psychological Data**
-- **Consumer Confidence Index (CCI)**: Tracks consumer sentiment. Low confidence can signal recession risks.
-- **Investor Sentiment**: Data from social media, news articles, and financial reports can help determine investor sentiment.
-- **Surveys and Polls**: Surveys from businesses (like the PMI - Purchasing Managers' Index) and consumer sentiment can provide insights into recession probability.
-  
-### 5. **Government and Fiscal Policies**
-- **Federal Reserve Actions**: Track interest rate changes, quantitative easing measures, or monetary tightening.
-- **Government Stimulus/Spending**: Increased government spending during an economic downturn can help offset some recessionary effects.
-  
-### 6. **Global Economic Data**
-- **Global Trade Data**: Trade wars or significant changes in global trade can affect domestic economies.
-- **Oil Prices**: Crude oil prices often influence inflation and the broader economy. Large fluctuations may point to economic slowdowns.
-- **Foreign Exchange Rates**: The strength of the U.S. dollar or foreign currencies can signal international economic pressures.
-  
-### 7. **Debt and Credit Data**
-- **Corporate Debt Levels**: High levels of debt in corporate sectors can become unsustainable during a recession.
-- **Consumer Debt**: Rising consumer debt levels may point to an impending recession as consumers may struggle to pay off debt.
-- **Credit Spreads**: The difference in yields between corporate bonds and treasury bonds can indicate perceived risk in the economy.
-  
-### 8. **Yield Curve Data**
-- **Treasury Yield Curve**: Historically, an inverted yield curve (short-term rates higher than long-term rates) has been a reliable predictor of recessions.
+### 4. **Kaggle Datasets**
+   - **Data:** Kaggle hosts a variety of stock market and financial datasets. You can find datasets like historical stock prices, sentiment analysis of news articles, and financial indicators.
+   - **Use case:** You can use Kaggle datasets to train your machine learning model. Some popular datasets include stock price data, financial ratios, and even sentiment data from news articles.
+   - **Link:** [Kaggle Datasets](https://www.kaggle.com/datasets)
 
-### 9. **Housing Market Data**
-- **Housing Starts and Building Permits**: These numbers can indicate the health of the housing market, which can be a leading indicator of broader economic conditions.
-- **Home Prices**: Declines in housing prices may indicate a slowing economy or recession.
+### 5. **Finviz**
+   - **Data:** Provides stock screeners, charts, and financial news.
+   - **Use case:** Finviz can give you a deep dive into various financial metrics that could help predict when to sell stocks based on fundamental or technical analysis.
+   - **Link:** [Finviz](https://finviz.com/)
 
-### 10. **Alternative Data**
-- **Geopolitical Events**: Data on major political events, wars, and elections can impact market performance.
-- **Natural Disasters**: Hurricanes, pandemics, or other significant events can disrupt economic activity.
-- **Social Media/News Sentiment Analysis**: Text mining and sentiment analysis from social media, financial news, and blog posts can provide insights into how the public feels about the economy and market.
+### 6. **Google Finance**
+   - **Data:** Provides historical stock price data, financial news, and market trends.
+   - **Use case:** Google Finance can be a reliable source of historical stock price data and market information for your model.
+   - **Link:** [Google Finance](https://www.google.com/finance)
 
----
+### 7. **IEX Cloud**
+   - **Data:** Stock prices, historical data, news, and fundamental data for US-based companies.
+   - **Use case:** IEX Cloud offers reliable stock data and financial news that can help with predictive modeling.
+   - **Link:** [IEX Cloud](https://iexcloud.io/)
 
-### Suggested Model Features
-1. **Historical Economic Indicators**: Use time-series data for indicators like GDP, unemployment rates, inflation, and interest rates.
-2. **Stock Performance Metrics**: Features like stock market returns, volatility (VIX), P/E ratios, and moving averages.
-3. **Sentiment Scores**: Sentiment analysis scores from news articles, social media, and market reports.
-4. **Lag Variables**: Many indicators such as unemployment or stock market returns have delayed effects, so lagged versions of these variables might be helpful.
-5. **Modeling Nonlinear Relationships**: Use machine learning models that can capture complex, nonlinear relationships (e.g., Random Forests, XGBoost, or Neural Networks).
+### 8. **Sentiment Analysis Datasets (e.g., News or Social Media Data)**
+   - **Data:** News articles, Twitter data, or other social media feeds related to the stock market.
+   - **Use case:** Sentiment analysis of news or social media could be used to gauge the general market sentiment, which can be a useful factor in deciding when to sell a stock.
+   - **Source:** [Twitter API](https://developer.twitter.com/en/docs/twitter-api), [Reddit API](https://www.reddit.com/dev/api/), or Kaggle sentiment analysis datasets.
 
-### Data Sources
-- **Federal Reserve Economic Data (FRED)**: For a wealth of U.S. economic data.
-- **Yahoo Finance**: For stock market data.
-- **World Bank**: For global economic indicators.
-- **Quandl**: For economic and financial datasets.
-- **OECD**: For international economic data.
-- **Twitter API / News API**: For sentiment analysis.
-- **SEC Filings**: For earnings reports and corporate filings.
-  
-### Models to Consider
-- **Supervised Learning**: Use regression models (Linear, Lasso, etc.) or tree-based models (Random Forest, XGBoost) for predicting future recession probabilities or stock price declines.
-- **Time Series Models**: Models like ARIMA, LSTM, or Prophet can be useful for predicting future economic indicators based on past trends.
-- **Reinforcement Learning**: Use this to suggest buy/sell actions based on simulated economic and stock market scenarios.
+### 9. **FNSPID (Financial News and Stock Price Index Dataset)**
+   - **Data:** Stock prices along with daily financial news headlines.
+   - **Use case:** A dataset that combines stock prices with daily news headlines, useful for sentiment analysis or identifying patterns where news events influence stock performance.
+   - **Link:** [FNSPID Dataset on Kaggle](https://www.kaggle.com/datasets/ejlok1/financial-news-and-stock-price-index)
 
-### Evaluation Metrics
-- **Accuracy**: How accurately the model predicts recessions or stock market downturns.
-- **Precision/Recall/F1-Score**: To balance the risk of false positives (predicting a recession when there isn't one) and false negatives (missing a recession).
-- **AUC-ROC**: For classification models to evaluate the trade-off between true positive and false positive rates.
+### 10. **US SEC Filings (EDGAR)**
+   - **Data:** SEC filings (10-Q, 10-K reports, etc.), insider trading, earnings calls, and financial statements.
+   - **Use case:** You can analyze financial statements and insider trading activity to understand when insiders are selling stocks or how company earnings affect stock prices.
+   - **Link:** [SEC EDGAR Database](https://www.sec.gov/edgar/searchedgar/companysearch.html)
 
-By combining these various data sources and techniques, you can create a robust machine learning model that predicts recessions and helps stock traders make informed decisions about when to sell their stocks.
+### Tips for Building the Model:
+1. **Features:** You can use historical stock prices (e.g., closing price, high, low, volume) and technical indicators (e.g., moving averages, Relative Strength Index, MACD).
+2. **Sentiment Analysis:** Analyze news or social media sentiment, as public perception of a company can impact its stock price.
+3. **Machine Learning Algorithms:** Consider regression models, time series models (like ARIMA or LSTM), or ensemble models (like random forests and gradient boosting) for prediction.
+4. **Evaluation:** Use performance metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and accuracy for classification-based models.
+
+This set of datasets should give you a solid foundation to predict the best time for selling stocks. The combination of price data, sentiment analysis, and technical indicators will help you build a robust model.
