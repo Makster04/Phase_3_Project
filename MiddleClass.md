@@ -1,12 +1,12 @@
-
+# PHASE 3 PROJECT
 ---
 
 ## **1. Problem Definition**  
 
-Business Problem:
+**Business Problem:**
 ***"Your company sees that many tech professionals are moving to cities with growing tech scenes, but the challenge is that these cities vary widely in terms of being financially comfortable. Your company wants to help new tech professionals make informed decisions about where to move for the best career opportunities in the tech industry while also considering whether the city is financially comfortable for them. However, they are unsure how to identify which cities offer the best combination of both tech growth and financial comfort."***
 
-Stakeholders:
+**Stakeholders:**
 1. **Tech Professionals (Target Audience)**
 - Why they're a stakeholder: They are the end-users who will benefit from identifying cities that balance career opportunities and financial comfort.
 2. **City Governments and Municipalities**
@@ -20,13 +20,18 @@ Stakeholders:
 6. **Government Agencies Focused on Employment and Economic Development**
 - Why they're a stakeholder: These entities may use the information to shape policies that encourage growth in tech sectors or incentivize companies to move to certain cities.
 
-
-Examples of Issues: 
+--- 
+**Examples of Issues:**
 - New York City may have a lot of opportunities for people who just stepped into tech, but people haven't been comfortable living financially there.
 - Seattle may be a tech hub city, but its only been useful for people who already have high and senior level experience in tech.
 - Cities in Iowa and Maine may be affordable, but it's nowhere near a tech hub.
+---
 
-This project aims to help **new tech professionals** find cities that offer **strong career opportunities** in the tech sector while also being **financially sustainable**.  
+**GOAL:** This project aims to help **new tech professionals** find cities that offer **strong career opportunities** in the tech sector while also being **financially sustainable**.  
+
+---
+
+## Project Route
 
 Instead of treating this as a **single categorical classification**, we will **split the target into two separate but related binary classifications**:  
 1. **Tech Hub Classification (Binary Output: Yes/No)** → Does the city have a growing tech scene?  
