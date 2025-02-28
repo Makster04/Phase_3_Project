@@ -6,6 +6,20 @@
 Business Problem:
 ***"Your company sees that many tech professionals are moving to cities with growing tech scenes, but the challenge is that these cities vary widely in terms of being financially comfortable. Your company wants to help new tech professionals make informed decisions about where to move for the best career opportunities in the tech industry while also considering whether the city is financially comfortable for them. However, they are unsure how to identify which cities offer the best combination of both tech growth and financial comfort."***
 
+Stakeholders:
+1. **Tech Professionals (Target Audience)**
+Why they're a stakeholder: They are the end-users who will benefit from identifying cities that balance career opportunities and financial comfort.
+2. **City Governments and Municipalities**
+Why they're a stakeholder: They could use the insights from this project to attract tech talent to their cities by showcasing their strengths as tech hubs and their affordability.
+3. **Tech Companies and Startups**
+Why they're a stakeholder: These companies may be looking to relocate or expand to cities with a strong pool of tech talent.
+4. **Real Estate Developers and Agents**
+Why they're a stakeholder: They may use the insights to target cities with increasing tech workers and strong growth, ensuring that there are suitable housing options available for these professionals.
+5. **Local Economists and Data Analysts**
+Why they're a stakeholder: These professionals will be involved in analyzing the data, creating reports, and forecasting trends based on the findings.
+6. **Government Agencies Focused on Employment and Economic Development**
+Why they're a stakeholder: These entities may use the information to shape policies that encourage growth in tech sectors or incentivize companies to move to certain cities.
+
 
 Examples of Issues: 
 - New York City may have a lot of opportunities for people who just stepped into tech, but people haven't been comfortable living financially there.
