@@ -3,6 +3,13 @@
 
 ## **1. Problem Definition**  
 
+Business Problem:
+"Your company sees that many tech professionals are moving to cities with growing tech scenes, but the challenge is that these cities vary widely in terms of being financially comfortable. Your company wants to help new tech professionals make informed decisions about where to move for the best career opportunities in the tech industry while also considering whether the city is financially comfortable for them. However, they are unsure how to identify which cities offer the best combination of both tech growth and financial comfort."
+
+Examples of Issues: 
+- New York City may be a large tech hub, but people havent been conftorable living financially there.
+- Seattle may be a tech hub city, but its only been useful for people who already have high and senior level expirience in tech
+
 This project aims to help **new tech professionals** find cities that offer **strong career opportunities** in the tech sector while also being **financially sustainable**.  
 
 Instead of treating this as a **single categorical classification**, we will **split the target into two separate but related binary classifications**:  
@@ -185,4 +192,29 @@ print(f"Affordability Classification Accuracy: {affordability_accuracy:.2f}")
 | **Decision Tree** | ✅ Yes | ✅ Yes | ❌ No |
 | **Random Forest** | ✅ Yes | ✅ Yes | ✅ Yes |
 
-**Best Choice?** → **Random Forest** for performance + interpretability. 🚀
+---
+### **Project Summary:**
+
+This project aims to classify cities based on **two key factors**:  
+1. **Tech Hub Classification** (Is the city a growing tech hub?)
+2. **Affordability Classification** (Is the city affordable for entry-level tech workers?)
+
+The approach involves:
+- **Data Collection**: Gathering information about cities' tech growth and financial conditions, including population density, tech job growth, cost of living, and more.
+- **Feature Engineering**: Creating new features like income-to-rent ratios, and scaling/encoding variables for better model performance.
+- **Modeling**: Using **MultiOutputClassifier** with models like **Logistic Regression**, **Decision Tree**, and **Random Forest** to predict both tech growth and affordability.
+- **Evaluation**: Assessing model performance with metrics like **accuracy**, **precision**, and **recall** for each target (Tech Hub & Affordability), plus feature importance for insights.
+
+### **Key Techniques & Tools**:
+- **Machine Learning Models**: Logistic Regression, Decision Tree, Random Forest.
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score.
+- **Tools**: Python, Scikit-learn, MultiOutputClassifier, Data Preprocessing, Feature Engineering.
+
+The final goal is to categorize cities into one of four groups:  
+- **Tech-Friendly & Affordable**  
+- **Tech-Friendly but Expensive**  
+- **Affordable but Not Tech-Friendly**  
+- **Not Suitable**  
+
+This classification will help tech professionals make informed decisions about relocating to cities that align with their career goals and financial situation.
+
