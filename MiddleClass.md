@@ -21,11 +21,6 @@
 - Why they're a stakeholder: These entities may use the information to shape policies that encourage growth in tech sectors or incentivize companies to move to certain cities.
 
 --- 
-**Examples of Issues:**
-- New York City may have a lot of opportunities for people who just stepped into tech, but people haven't been comfortable living financially there.
-- Seattle may be a tech hub city, but its only been useful for people who already have high and senior level experience in tech.
-- Cities in Iowa and Maine may be affordable, but it's nowhere near a tech hub.
----
 
 **GOAL:** This project aims to help **new tech professionals** find cities that offer **strong career opportunities** in the tech sector while also being **financially sustainable**.  
 
