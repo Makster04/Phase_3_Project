@@ -143,6 +143,8 @@ For each classification and model, we will measure the following metrics to eval
 - **F1 Score:** By balancing precision and recall, the F1 score ensures that we don’t sacrifice one at the expense of the other, providing a well-rounded view of model performance.
   
 - **ROC-AUC:** This helps evaluate the model's ability to discriminate between the two classes (Tech Hub vs. Non-Tech Hub and Affordable vs. Not Affordable) at different thresholds. A higher AUC means that the model is better at distinguishing between the different categories.
+  
+- **Confusion Matrix:** Provides a detailed breakdown of the model’s predictions, showing the true positives, false positives, true negatives, and false negatives for both "Tech Hub" and "Affordability" classifications.
 
 #### **Final Decision-Making:**  
 The ultimate decision-making will be driven by these two classification outputs. The models will offer a clear breakdown of which cities are both tech-friendly and affordable, helping users (entry-level tech professionals) make informed relocation decisions based on career prospects and financial feasibility. 
