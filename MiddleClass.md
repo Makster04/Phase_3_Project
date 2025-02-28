@@ -80,5 +80,13 @@ To create the target labels for classification:
 - **Trained Classification Model**: A model that predicts the most suitable city category (e.g., "Affordable", "Family-Friendly").
 - **Interface**: A simple web-based or command-line interface where users can enter their preferences and receive city recommendations based on classification.
 - **Model Evaluation Report**: A report with evaluation metrics such as accuracy, precision, recall, and F1-Score.
+
+---
+
+### **Additional Considerations for the Classification Model**
+
+- **Class Imbalance**: If certain categories (e.g., "Not Suitable") are underrepresented in your data, you may need to balance the classes using oversampling or undersampling techniques.
+- **Feature Importance**: Use the feature importance from models like Random Forest or XGBoost to explain why certain cities were recommended for a specific category.
+- **Explainability**: Since middle-class people might not understand the exact workings of the model, consider using **LIME** or **SHAP** to explain predictions.
   
 With this classification approach, you can predict which category a city falls into, helping users easily decide where they should move based on their financial and lifestyle preferences.
