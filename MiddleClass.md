@@ -8,16 +8,22 @@ Business Problem:
 
 Stakeholders:
 1. **Tech Professionals (Target Audience)**
+
 Why they're a stakeholder: They are the end-users who will benefit from identifying cities that balance career opportunities and financial comfort.
 2. **City Governments and Municipalities**
+
 Why they're a stakeholder: They could use the insights from this project to attract tech talent to their cities by showcasing their strengths as tech hubs and their affordability.
 3. **Tech Companies and Startups**
+
 Why they're a stakeholder: These companies may be looking to relocate or expand to cities with a strong pool of tech talent.
 4. **Real Estate Developers and Agents**
+
 Why they're a stakeholder: They may use the insights to target cities with increasing tech workers and strong growth, ensuring that there are suitable housing options available for these professionals.
 5. **Local Economists and Data Analysts**
+
 Why they're a stakeholder: These professionals will be involved in analyzing the data, creating reports, and forecasting trends based on the findings.
 6. **Government Agencies Focused on Employment and Economic Development**
+
 Why they're a stakeholder: These entities may use the information to shape policies that encourage growth in tech sectors or incentivize companies to move to certain cities.
 
 
