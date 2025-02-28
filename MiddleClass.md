@@ -55,6 +55,8 @@ By **splitting this into two outputs**, we make it possible to analyze and impro
 
 To classify cities based on both **tech growth** and **financial comfort**, we will include the following input features:  
 
+Since this is a lot of datasets and we want to narrow these factors down, each factor we will form into an Index
+
 ### **A. Urbanization Factors**  
 - **Population Density**: Higher densities indicate urban environments.  
 - **Urbanization Growth Rate**: Measures how quickly a city is expanding in terms of population.  
