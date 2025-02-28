@@ -1,4 +1,4 @@
-Here's a fully refined version of your project outline with a focus on **Multi-Output Classification**, ensuring that we handle the classification of **both "Tech Hub" status and "Affordability" separately** as targets while still treating them as related outputs. This will require a **MultiOutputClassifier** model.  
+Here’s the revised version excluding **Hamming Loss**:
 
 ---
 
@@ -73,32 +73,58 @@ Since there are **two independent but related targets**, we must use a **MultiOu
 
 ---
 
-## **4. Machine Learning Approach**  
+## **4. Machine Learning Models for Multi-Output Classification**  
 
 Since we are predicting **two related but independent outputs**, we need a **Multi-Output Classification Model**.  
 
-### **A. Model Selection**  
-Suitable models for **MultiOutputClassifier**:  
-- **Random Forest Classifier** (Good for structured data)  
-- **XGBoost Classifier** (Handles complex relationships)  
-- **Support Vector Machines (SVM)** (If feature space is small)  
-- **Neural Networks (MLPClassifier)** (For deep learning-based solutions)  
+### **1. Logistic Regression (Baseline Model)**
+- Simple, interpretable, works well for **linearly separable** data.  
+- Regularization with **Ridge (L2)** or **Lasso (L1)** can improve generalization.  
 
-To implement this in **scikit-learn**, we can wrap a classifier inside **MultiOutputClassifier**:  
 ```python
+from sklearn.linear_model import LogisticRegression
 from sklearn.multioutput import MultiOutputClassifier
+
+# Base classifier
+logistic = LogisticRegression()
+multi_logistic = MultiOutputClassifier(logistic)
+
+multi_logistic.fit(X_train, [y_tech_hub, y_affordability])
+```
+
+---
+
+### **2. Decision Tree Classifier**
+- Works well with **non-linear** data.  
+- Easy to interpret using **feature importance**.  
+- Prone to **overfitting** unless depth is controlled.  
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+
+# Base classifier
+tree = DecisionTreeClassifier(max_depth=5)
+multi_tree = MultiOutputClassifier(tree)
+
+multi_tree.fit(X_train, [y_tech_hub, y_affordability])
+```
+
+---
+
+### **3. Random Forest Classifier (Best for Accuracy & Stability)**
+- **Ensemble method** → Reduces overfitting of individual decision trees.  
+- Handles **both linear & non-linear relationships** well.  
+- Computes **feature importance**, helping us identify key factors.  
+
+```python
 from sklearn.ensemble import RandomForestClassifier
 
-# Define base classifier
-base_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+# Base classifier
+random_forest = RandomForestClassifier(n_estimators=100, max_depth=10)
+multi_rf = MultiOutputClassifier(random_forest)
 
-# Wrap it inside MultiOutputClassifier
-multi_target_model = MultiOutputClassifier(base_classifier)
-
-# Fit the model
-multi_target_model.fit(X_train, [y_tech_hub, y_affordability])
+multi_rf.fit(X_train, [y_tech_hub, y_affordability])
 ```
-This trains **one model** to predict **both Tech Hub classification and Affordability classification** at the same time.  
 
 ---
 
@@ -109,15 +135,14 @@ Since this is a **Multi-Output Classification** problem, we evaluate the model u
 1. **Accuracy (Overall & Per Output)**  
 2. **Precision, Recall, and F1-Score** for each output (Tech Hub, Affordability)  
 3. **Confusion Matrix** for each output  
-4. **Hamming Loss** (Fraction of incorrectly predicted labels)  
-5. **ROC-AUC (One-vs-Rest method for multi-label classification)**  
+4. **Feature Importance** (For Decision Tree & Random Forest)  
 
 Example: Evaluating accuracy for both outputs separately  
 ```python
 from sklearn.metrics import accuracy_score
 
 # Predictions
-y_pred = multi_target_model.predict(X_test)
+y_pred = multi_rf.predict(X_test)
 
 # Evaluate each target separately
 tech_hub_accuracy = accuracy_score(y_test_tech_hub, y_pred[:, 0])
@@ -142,26 +167,23 @@ print(f"Affordability Classification Accuracy: {affordability_accuracy:.2f}")
 
 3. **Model Training**  
    - Split the dataset into training/testing (80/20).  
-   - Train the **MultiOutputClassifier** with a Random Forest/XGBoost model.  
+   - Train multiple models (Logistic, Decision Tree, Random Forest).  
 
 4. **Hyperparameter Tuning**  
-   - Optimize the number of trees, depth, and learning rate.  
+   - Optimize **Random Forest (depth, n_estimators, max_features)**.  
 
-5. **Evaluation & Improvements**  
-   - Use cross-validation for generalization.  
-   - Check feature importance to refine the dataset.  
-
-6. **Deployment (Optional)**  
+5. **Evaluation & Deployment**  
+   - Choose **best model** based on test accuracy.  
    - Convert model to API (Flask/FastAPI).  
-   - Build an interactive dashboard (Streamlit/Tableau).  
+   - Build interactive dashboard (Streamlit/Tableau).  
 
 ---
 
-## **7. Project Goals & Impact**  
+## **Final Model Choice**
+| Model | Handles Multi-Output? | Works with Non-Linear Data? | Best for Large Datasets? |
+|------------|-------------------|----------------------|-------------------|
+| **Logistic Regression** | ✅ Yes | ❌ No | ✅ Yes |
+| **Decision Tree** | ✅ Yes | ✅ Yes | ❌ No |
+| **Random Forest** | ✅ Yes | ✅ Yes | ✅ Yes |
 
-This project will help **new tech professionals** decide where to move based on **both career growth & financial sustainability**. By predicting whether a city is a **Tech Hub** and **Affordable**, we enable better decision-making backed by data.  
-
----
-
-## **Final Notes**  
-This version fully integrates **Multi-Output Classification**, allowing the model to make **two predictions per city** while still classifying them into the final **four categories**. By training **Tech Hub Classification** and **Affordability Classification** separately but in one model, we gain flexibility, better interpretability, and improved performance.
+**Best Choice?** → **Random Forest** for performance + interpretability. 🚀
