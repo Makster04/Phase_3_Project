@@ -63,26 +63,60 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 ## **5. Updated Features (Input Variables)**
 
 
-
+---
 ### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
 Already made:
 https://www.comptia.org/content/research/best-tech-cities-it-jobs 
 https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals
-
+---
 Data based on Numbers
-https://www.numbeo.com/cost-of-living/
 https://0sbs.com/map-of-us-tech-cities/
 https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-state-of-the-tech-workforce-2024.pdf?sfvrsn=a8aa5246_2
+**Cost of Living by Top 50 biggest cities:**
+https://advisorsmith.com/data/coli
+- 
 
-- **Location Quotient Rank (no. IT job ads):** Reflects the concentration of IT job ads in a city, showing how strong the local tech job market is relative to other cities.
-- **#IT Job Ads Rank:** This directly ties into the number of available IT job ads, indicating the size of the tech job market, especially relevant to entry-level professionals.
-- **1-year % Job Growth Rank:** Shows short-term growth in tech job opportunities, highlighting cities with rapid expansion in entry-level tech jobs.
-- **5-year % Job Growth Rank:** Provides long-term trends in job growth, helping predict sustained job opportunities in tech for entry-level professionals over the next several years.
+
+- Rent Price by City: https://www.rent.com/research/average-rent-prices-in-the-largest-cities/?msockid=0d87dbf3302667211222cf44310b66df
+- Utilities Price by City: https://www.gobankingrates.com/saving-money/home/heres-the-cost-of-utilities-in-major-cities/?utm_term=source_link&utm_campaign=1284465&utm_source=yahoo.com&utm_content=23&utm_medium=rss
+- Grocery Price by state: https://www.zippia.com/advice/average-cost-of-groceries-by-state/
+- Gas Price by state: https://www.gasbuddy.com/usa
+
 
 
 ### **C. Financial & Affordability Factors**
-- **Cost of Living Index Rank:** Measures the cost of living in different cities, helping to evaluate whether they are financially feasible for entry-level tech professionals.
-- **Cost of Living Adjusted Median Hourly Earnings Rank:** Combines salary levels with cost of living to assess the financial attractiveness of a city for entry-level tech professionals, showing whether salaries are competitive after adjusting for living costs.
+Here are the relevant links to the sources mentioned:
+
+- **Food (Grocery Prices)**: 
+  - [U.S. Bureau of Labor Statistics (BLS) - Consumer Price Index (CPI)](https://www.bls.gov/cpi/)
+  
+- **Housing**:
+  - [U.S. Department of Housing and Urban Development (HUD) - 50th Percentile Rent Estimates](https://www.huduser.gov/portal/datasets/50thpercentile.html)
+  - [Zillow’s Home Value Index](https://www.zillow.com/research/data/)
+  - [U.S. Bureau of Labor Statistics - Consumer Expenditure Survey](https://www.bls.gov/cex/)
+
+- **Utilities**:
+  - **Natural Gas**: 
+    - [U.S. Department of Energy - Natural Gas Prices](https://www.eia.gov/dnav/ng/ng_pri_sum_a_EPG0_PRS_DMcf_a.htm)
+  - **Electricity**: 
+    - [U.S. Department of Energy - Electricity Prices](https://www.eia.gov/electricity/data.php)
+  - **Household Operations (Services)**:
+    - [Metropolitan Area Regional Price Parities (BEA)](https://www.bea.gov/data/prices-incomes/price-indexes)
+
+- **Transportation**:
+  - **Gasoline**: 
+    - [GasBuddy](https://www.gasbuddy.com/)
+  - **Other Vehicle Expenses (Services)**:
+    - [Bureau of Economic Analysis - Metropolitan Area Regional Price Parities](https://www.bea.gov/data/industries/price-indexes)
+
+- **Health Care**:
+  - [U.S. Department of Health & Human Services - Medical Expenditure Panel Survey](https://meps.ahrq.gov/)
+  - [The Commonwealth Fund - Health Insurance Premiums](https://www.commonwealthfund.org/)
+
+- **Consumer Discretionary Spending**:
+  - [Bureau of Economic Analysis - Metropolitan Area Regional Price Parities for Goods and Services](https://www.bea.gov/data/prices-incomes/price-indexes)
+---
+These links will lead you to the respective datasets and resources for each category.
 
 ---
 
