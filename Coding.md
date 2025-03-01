@@ -29,3 +29,17 @@ rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 y_pred_rf = rf.predict(X_test)
 ```
+# Evaluate model performance
+```python
+models = {'Logistic Regression': y_pred_log, 'Decision Tree': y_pred_tree, 'Random Forest': y_pred_rf}
+
+for model, y_pred in models.items():
+    print(f"{model} Performance:")
+    print("Accuracy:", accuracy_score(y_test, y_pred))
+    print("Precision:", precision_score(y_test, y_pred))
+    print("Recall:", recall_score(y_test, y_pred))
+    print("F1 Score:", f1_score(y_test, y_pred))
+    print("ROC-AUC:", roc_auc_score(y_test, y_pred))
+    print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+    print("\n" + "-"*50 + "\n")
+```
