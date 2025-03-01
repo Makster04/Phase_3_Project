@@ -1,4 +1,3 @@
-
 # Phase 3 Project
 ---
 
@@ -46,7 +45,6 @@ The goal is to help new tech professionals find cities that offer strong career 
 
 **Criteria for Tech Hub (Updated):**  
 - **Number of Entry-Level Tech Jobs:** The volume of jobs specifically for entry-level tech professionals, such as junior developer roles, IT support, data analysts, etc.  
-- **Availability of Tech Training Programs:** The presence of local boot camps, tech meetups, internships, and programs aimed at first-entry professionals.  
 - **Entry-Level Salary Levels:** Cities offering competitive salaries for entry-level tech professionals while adjusting for cost of living.  
 - **Employer Focus on Hiring Juniors:** Percentage of tech companies in the city specifically hiring junior tech talent and supporting early career professionals.
 
@@ -71,8 +69,8 @@ The goal is to help new tech professionals find cities that offer strong career 
 **C. Financial & Affordability Factors**  
 - **Cost of Living Index**  
 - **Entry-Level Salary in Tech**  
-- **Income-to-Housing Ratio**  
-- **Income-to-Tax Ratio**  
+- **Entry Level Salary-to-Housing Ratio**  
+- **Entry Level Salary-to-Tax Ratio**  
 - **Rent & Housing Market Conditions**
 
 ---
