@@ -62,13 +62,18 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 
 ## **5. Updated Features (Input Variables)**
 
-### **A. Urbanization Factors**
 
-- Population Density
-- Urbanization Growth Rate
 
 ### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
+Already made:
 https://www.comptia.org/content/research/best-tech-cities-it-jobs 
+https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals
+
+Data based on Numbers
+https://www.numbeo.com/cost-of-living/
+https://0sbs.com/map-of-us-tech-cities/
+https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-state-of-the-tech-workforce-2024.pdf?sfvrsn=a8aa5246_2
+
 - **Location Quotient Rank (no. IT job ads):** Reflects the concentration of IT job ads in a city, showing how strong the local tech job market is relative to other cities.
 - **#IT Job Ads Rank:** This directly ties into the number of available IT job ads, indicating the size of the tech job market, especially relevant to entry-level professionals.
 - **1-year % Job Growth Rank:** Shows short-term growth in tech job opportunities, highlighting cities with rapid expansion in entry-level tech jobs.
