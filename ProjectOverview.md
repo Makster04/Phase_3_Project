@@ -66,12 +66,14 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 ---
 ### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
 Already made:
-https://www.comptia.org/content/research/best-tech-cities-it-jobs 
-https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals
+- https://www.comptia.org/content/research/best-tech-cities-it-jobs
+- https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals
+- https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-state-of-the-tech-workforce-2024.pdf?sfvrsn=a8aa5246_2
+
 ---
 Data based on Numbers
-https://0sbs.com/map-of-us-tech-cities/
-https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-state-of-the-tech-workforce-2024.pdf?sfvrsn=a8aa5246_2
+- All data on Tech : https://0sbs.com/map-of-us-tech-cities/
+
 **Cost of Living by Top 50 biggest cities:**
 https://advisorsmith.com/data/coli
 - 
