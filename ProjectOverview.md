@@ -68,7 +68,7 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 - Urbanization Growth Rate
 
 ### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
-
+https://www.comptia.org/content/research/best-tech-cities-it-jobs 
 - Number of Entry-Level Tech Jobs and Growth Rate
 - Entry-Level Salary Levels
 - Tech Job Market Accessibility
