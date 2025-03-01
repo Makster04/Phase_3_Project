@@ -1,4 +1,9 @@
-# Algorithms Used:
+## **7. Updated Machine Learning Models for Multi-Output Classification**
+
+We will use a multi-output model strategy designed to classify cities based on two primary outputs: Tech Hub Classification and Affordability Classification.
+
+###
+
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -30,8 +35,13 @@ rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 y_pred_rf = rf.predict(X_test)
 ```
-# Evaluate model performance
+
+---
+
+## **8. Metrics to Measure Model Performance**
+
 ```python
+# Evaluate model performance
 models = {'Logistic Regression': y_pred_log, 'Decision Tree': y_pred_tree, 'Random Forest': y_pred_rf}
 
 for model, y_pred in models.items():
@@ -44,3 +54,11 @@ for model, y_pred in models.items():
     print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
     print("\n" + "-"*50 + "\n")
 ```
+
+---
+
+## **9. How the Models and Metrics Guide Decision-Making**
+
+By implementing machine learning models, we classify cities based on these two primary aspects—Tech Hub and Affordability—ensuring that new tech professionals have actionable insights when considering relocation decisions. The project integrates a technical approach with real-world impact, making it valuable for various stakeholders.
+
+
