@@ -69,22 +69,15 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 
 ### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
 https://www.comptia.org/content/research/best-tech-cities-it-jobs 
-- Number of Entry-Level Tech Jobs and Growth Rate
-- Entry-Level Salary Levels
-- Tech Job Market Accessibility
-- Tech Employer Focus on Juniors
-- Number of Tech Companies (Startups & Large Firms)
-- Venture Capital Investment
-- Tech Conferences & Meetups
-- Tech Talent Pool (Graduates and Available Professionals)
+- **Location Quotient Rank (no. IT job ads):** Reflects the concentration of IT job ads in a city, showing how strong the local tech job market is relative to other cities.
+- **#IT Job Ads Rank:** This directly ties into the number of available IT job ads, indicating the size of the tech job market, especially relevant to entry-level professionals.
+- **1-year % Job Growth Rank:** Shows short-term growth in tech job opportunities, highlighting cities with rapid expansion in entry-level tech jobs.
+- **5-year % Job Growth Rank:** Provides long-term trends in job growth, helping predict sustained job opportunities in tech for entry-level professionals over the next several years.
+
 
 ### **C. Financial & Affordability Factors**
-
-- Cost of Living Index
-- Entry-Level Salary in Tech
-- Salary-to-Housing Ratio
-- Salary-to-Tax Ratio
-- Rent & Housing Market Conditions
+- **Cost of Living Index Rank:** Measures the cost of living in different cities, helping to evaluate whether they are financially feasible for entry-level tech professionals.
+- **Cost of Living Adjusted Median Hourly Earnings Rank:** Combines salary levels with cost of living to assess the financial attractiveness of a city for entry-level tech professionals, showing whether salaries are competitive after adjusting for living costs.
 
 ---
 
