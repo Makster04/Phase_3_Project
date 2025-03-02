@@ -44,7 +44,6 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 
 - Volume of entry-level jobs
 - Internship opportunities
-- Training programs
 - Entry-level salary ranges
 
 #### **Tech Hub Classification (Binary Output):**
@@ -62,63 +61,23 @@ Instead of just considering a city as a "growing tech hub," we focus on whether 
 
 ## **5. Updated Features (Input Variables)**
 
-
 ---
-### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
 Already made:
 - https://www.comptia.org/content/research/best-tech-cities-it-jobs
 - https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals
-- https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-state-of-the-tech-workforce-2024.pdf?sfvrsn=a8aa5246_2
+- https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports
+- https://advisorsmith.com/data/coli
 
 ---
-Data based on Numbers
+### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
+
 - All data on Tech : https://0sbs.com/map-of-us-tech-cities/
 
-**Cost of Living by Top 50 biggest cities:**
-https://advisorsmith.com/data/coli
-- 
-
-
-- Rent Price by City: https://www.rent.com/research/average-rent-prices-in-the-largest-cities/?msockid=0d87dbf3302667211222cf44310b66df
-- Utilities Price by City: https://www.gobankingrates.com/saving-money/home/heres-the-cost-of-utilities-in-major-cities/?utm_term=source_link&utm_campaign=1284465&utm_source=yahoo.com&utm_content=23&utm_medium=rss
-- Grocery Price by state: https://www.zippia.com/advice/average-cost-of-groceries-by-state/
-- Gas Price by state: https://www.gasbuddy.com/usa
-
-
+---
 
 ### **C. Financial & Affordability Factors**
 Here are the relevant links to the sources mentioned:
 
-- **Food (Grocery Prices)**: 
-  - [U.S. Bureau of Labor Statistics (BLS) - Consumer Price Index (CPI)](https://www.bls.gov/cpi/)
-  
-- **Housing**:
-  - [U.S. Department of Housing and Urban Development (HUD) - 50th Percentile Rent Estimates](https://www.huduser.gov/portal/datasets/50thpercentile.html)
-  - [Zillow’s Home Value Index](https://www.zillow.com/research/data/)
-  - [U.S. Bureau of Labor Statistics - Consumer Expenditure Survey](https://www.bls.gov/cex/)
-
-- **Utilities**:
-  - **Natural Gas**: 
-    - [U.S. Department of Energy - Natural Gas Prices](https://www.eia.gov/dnav/ng/ng_pri_sum_a_EPG0_PRS_DMcf_a.htm)
-  - **Electricity**: 
-    - [U.S. Department of Energy - Electricity Prices](https://www.eia.gov/electricity/data.php)
-  - **Household Operations (Services)**:
-    - [Metropolitan Area Regional Price Parities (BEA)](https://www.bea.gov/data/prices-incomes/price-indexes)
-
-- **Transportation**:
-  - **Gasoline**: 
-    - [GasBuddy](https://www.gasbuddy.com/)
-  - **Other Vehicle Expenses (Services)**:
-    - [Bureau of Economic Analysis - Metropolitan Area Regional Price Parities](https://www.bea.gov/data/industries/price-indexes)
-
-- **Health Care**:
-  - [U.S. Department of Health & Human Services - Medical Expenditure Panel Survey](https://meps.ahrq.gov/)
-  - [The Commonwealth Fund - Health Insurance Premiums](https://www.commonwealthfund.org/)
-
-- **Consumer Discretionary Spending**:
-  - [Bureau of Economic Analysis - Metropolitan Area Regional Price Parities for Goods and Services](https://www.bea.gov/data/prices-incomes/price-indexes)
----
-These links will lead you to the respective datasets and resources for each category.
 
 ---
 
