@@ -59,10 +59,10 @@ Rather than a generic classification, this project evaluates cities based on the
 - **Tech Community & Events:** Number of meetups, conferences, and hackathons.  
 
 #### **Relevant Data Sources:**  
-- [CompTIA Best Tech Cities Report](https://www.comptia.org/content/research/best-tech-cities-it-jobs)  
-- [Cloudwards Tech City Rankings](https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals)  
-- [AdvisorSmith Cost of Living Data](https://advisorsmith.com/data/coli)  
-- [0sbs Tech Cities Map](https://0sbs.com/map-of-us-tech-cities/)  
+- **CompTIA Best Tech Cities**: [CompTIA Best Tech Cities Report](https://www.comptia.org/content/research/best-tech-cities-it-jobs)  
+- **Tech City Rankings**: [Cloudwards Tech City Rankings](https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals)  
+- **AdvisorSmith Cost of Living Data**: [AdvisorSmith Cost of Living Data](https://advisorsmith.com/data/coli)  
+- **Tech City Map**: [0sbs Tech Cities Map](https://0sbs.com/map-of-us-tech-cities/)  
 
 ### **B. Financial & Affordability Factors**  
 - **Cost of Living Index:** Housing, groceries, utilities, transportation, and healthcare costs.  
