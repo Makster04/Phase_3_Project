@@ -1,150 +1,145 @@
-# **Project Proposal: Identifying Tech-Friendly and Affordable Cities for Entry-Level Tech Professionals**
-
-## **1. Problem Definition (Revised)**
-
-### **Business Problem:**
-
-Your company observes that tech professionals, especially those entering the industry, are moving to cities with growing tech scenes. However, while these cities may have a burgeoning tech industry, the question remains: Do these areas offer accessible job opportunities for entry-level tech professionals? Your company aims to help new tech professionals identify cities that not only have a growing tech sector but also provide ample opportunities for first-entry tech talent, ensuring both career potential and financial comfort while matching their preferred living environment.
+Here’s a more stable and refined version of your proposal with improved clarity and structure:  
 
 ---
 
-## **2. Stakeholders**
+# **Project Proposal: Identifying Tech-Friendly and Affordable Cities for Entry-Level Tech Professionals**  
 
-### **Primary Stakeholders:**
+## **1. Problem Definition**  
 
-- **Tech Professionals (Target Audience)**
-  - They are the end-users who benefit from identifying cities that offer career opportunities and accessibility for entry-level roles in the tech industry.
-- **Tech Companies and Startups**
-  - Companies looking to expand or relocate to cities with a growing tech sector and accessible entry-level talent.
-- **City Governments and Municipalities**
-  - Governments aiming to attract and retain young tech talent by showcasing their affordability and potential for growth.
-
-### **Secondary Stakeholders:**
-
-- **Real Estate Developers and Agents**
-  - Anticipate demand for housing from incoming tech professionals.
-- **Local Economists and Data Analysts**
-  - Analyze trends to help guide economic development policies related to job growth and affordability.
-- **Government Agencies Focused on Employment and Economic Development**
-  - Utilize insights to encourage the growth of entry-level job opportunities in cities with burgeoning tech sectors.
+### **Business Problem**  
+Many entry-level tech professionals are relocating to cities with growing tech industries. However, the availability of job opportunities and financial sustainability in these cities remain key concerns. This project aims to help new tech professionals identify cities that:  
+- Have a strong and expanding tech sector.  
+- Provide ample entry-level job opportunities.  
+- Are financially sustainable based on entry-level salaries and living costs.  
 
 ---
 
-## **3. Revised Goal**
+## **2. Stakeholders**  
 
-The goal is to help new tech professionals find cities that offer strong career opportunities in the tech sector with ample opportunities for first-entry tech roles while also being financially sustainable.
+### **Primary Stakeholders**  
+- **Tech Professionals (Target Audience):** Benefit from insights into cities with promising career prospects and manageable living costs.  
+- **Tech Companies & Startups:** Gain access to data on cities with a growing talent pool and favorable business conditions.  
+- **City Governments & Economic Developers:** Use insights to attract and retain tech talent by promoting affordability and job growth.  
 
----
-
-## **4. Project Route (Updated Approach)**
-
-### **A. Tech Hub Classification (Updated)**
-
-Instead of just considering a city as a "growing tech hub," we focus on whether it provides specific opportunities for entry-level tech professionals. This includes:
-
-- Volume of entry-level jobs
-- Internship opportunities
-- Entry-level salary ranges
-
-#### **Tech Hub Classification (Binary Output):**
-
-✅ Yes: The city has a growing tech sector and offers ample opportunities for entry-level tech professionals.\
-❌ No: The city is not growing or does not offer sufficient opportunities for first-entry tech workers.
-
-#### **Criteria for Tech Hub (Updated):**
-
-- **Number of Entry-Level Tech Jobs:** The volume of jobs specifically for entry-level tech professionals, such as junior developers, IT support, and data analysts.
-- **Entry-Level Salary Levels:** Competitive salaries adjusted for the cost of living.
-- **Employer Focus on Hiring Juniors:** Percentage of tech companies hiring junior talent and supporting early career professionals.
+### **Secondary Stakeholders**  
+- **Real Estate Developers & Agents:** Anticipate demand for housing in emerging tech hubs.  
+- **Local Economists & Policy Makers:** Leverage findings to guide economic development strategies.  
+- **Employment & Workforce Development Agencies:** Utilize insights to enhance job market accessibility.  
 
 ---
 
-## **5. Updated Features (Input Variables)**
-
----
-Already made:
-- https://www.comptia.org/content/research/best-tech-cities-it-jobs
-- https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals
-- https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports
-- https://advisorsmith.com/data/coli
-
----
-### **B. Tech Hub Factors (With Updated Focus on Entry-Level Opportunities)**
-
-- All data on Tech : https://0sbs.com/map-of-us-tech-cities/
+## **3. Project Objectives**  
+This project will:  
+- Identify cities with strong entry-level tech job opportunities.  
+- Assess financial sustainability for new tech professionals in those cities.  
+- Provide actionable insights for career and relocation decisions.  
 
 ---
 
-### **C. Financial & Affordability Factors**
-Here are the relevant links to the sources mentioned:
+## **4. Approach: Identifying Tech Hubs for Entry-Level Professionals**  
 
+### **A. Tech Hub Classification**  
+Rather than a generic classification, this project evaluates cities based on their suitability for entry-level tech professionals. Key factors include:  
+- **Volume of Entry-Level Job Postings**  
+- **Internship and Training Program Availability**  
+- **Entry-Level Salary Ranges**  
 
----
-
-## **6. Updated Target (Output Variables)**
-
-### **Tech Hub Classification (Y1)**
-
-✅ Yes → The city offers growing tech job opportunities and resources for entry-level professionals.\
-❌ No → The city does not offer sufficient opportunities for new tech talent.
-
-### **Affordability Classification (Y2)**
-
-✅ Yes → The city is financially suitable for entry-level tech professionals.\
-❌ No → The city is unaffordable for an entry-level professional in the tech sector.
+#### **Classification Output**  
+✅ **Yes:** The city has a growing tech sector and strong entry-level opportunities.  
+❌ **No:** The city lacks sufficient growth or entry-level job accessibility.  
 
 ---
 
-## **7. Updated Machine Learning Models for Multi-Output Classification**
+## **5. Data Sources & Key Factors**  
 
-We will use a multi-output model strategy designed to classify cities based on two primary outputs: Tech Hub Classification and Affordability Classification.
+### **A. Tech Hub Factors (Entry-Level Focus)**  
+- **Job Market Data:** Availability and growth of entry-level tech jobs.  
+- **Industry Reports:** Insights into tech investment and startup ecosystems.  
+- **Educational & Training Institutions:** Presence of coding bootcamps, universities, and mentorship programs.  
+- **Tech Community & Events:** Number of meetups, conferences, and hackathons.  
 
+#### **Relevant Data Sources:**  
+- [CompTIA Best Tech Cities Report](https://www.comptia.org/content/research/best-tech-cities-it-jobs)  
+- [Cloudwards Tech City Rankings](https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals)  
+- [AdvisorSmith Cost of Living Data](https://advisorsmith.com/data/coli)  
+- [0sbs Tech Cities Map](https://0sbs.com/map-of-us-tech-cities/)  
 
-### **Algorithms Used:**
-- **Logistic Regression:** Predicts both Tech Hub Classification and Affordability Classification based on newly adjusted features.
-- **Decision Tree Classifier:** Predicts whether a metropolitan area offers entry-level opportunities and affordability, considering non-linear relationships in the data.
-- **Random Forest Classifier:** Preferred choice for accuracy and stability, especially in classifying metropolitan areas into the four final categories.
-
----
-
-## **8. Final Classification (Updated)**
-| Tech Hub? | Affordable? | Final Classification |
-|-----------|------------|----------------------|
-| ✅ Yes    | ✅ Yes     | Tech-Friendly & Affordable |
-| ✅ Yes    | ❌ No      | Tech-Friendly but Expensive |
-| ❌ No     | ✅ Yes     | Affordable but Not Tech-Friendly |
-| ❌ No     | ❌ No      | Not Suitable |
-
----
-
-## **9. Metrics to Measure Model Performance**
-For each classification and model, we will evaluate the following:
-- **Accuracy:** Measures the overall percentage of correct classifications.
-- **Precision:** Measures how many predicted positive classifications were actually correct.
-- **Recall (Sensitivity):** Measures how many true positive classifications were identified.
-- **F1 Score:** Balances precision and recall.
-- **ROC-AUC:** Evaluates the model's ability to distinguish between categories.
-- **Confusion Matrix:** Provides insights into prediction errors.
+### **B. Financial & Affordability Factors**  
+- **Cost of Living Index:** Housing, groceries, utilities, transportation, and healthcare costs.  
+- **Entry-Level Salary vs. Living Costs:** Ensuring sustainable earnings.  
+- **Rent-to-Income Ratio:** Evaluating financial burden on newcomers.  
+- **Local Tax Rates:** State and municipal tax burdens.  
 
 ---
 
-## **10. How the Models and Metrics Guide Decision-Making**
+## **6. Target Output Variables (Multi-Output Classification)**  
 
-### **Using the Models:**
-- **Tech Hub Classification Model:** Identifies viable metropolitan areas for entry-level tech professionals.
-- **Affordability Classification Model:** Ensures metropolitan areas are financially sustainable for new tech professionals.
+### **Tech Hub Classification (Y1)**  
+✅ **Yes:** The city has growing tech job opportunities for entry-level professionals.  
+❌ **No:** The city lacks sufficient opportunities for new tech talent.  
 
-### **Using the Metrics:**
-- **Accuracy:** Ensures reliability.
-- **Precision & Recall:** Optimize financial feature selection.
-- **F1 Score:** Maintains balanced performance.
-- **ROC-AUC:** Evaluates model effectiveness.
-- **Confusion Matrix:** Identifies misclassifications.
+### **Affordability Classification (Y2)**  
+✅ **Yes:** The city is financially sustainable for entry-level tech professionals.  
+❌ **No:** The city is unaffordable based on entry-level income.  
 
 ---
 
-## **11. Summary of the Updated Model Approach**
-This project centers on helping first-entry tech professionals by focusing on cities that offer both growing tech job opportunities and affordability. The **Tech Hub Classification** emphasizes entry-level job availability, training programs, and employer focus on juniors, while the **Affordability Classification** ensures these metropolitan areas are financially accessible. 
+## **7. Machine Learning Models for Classification**  
 
-By implementing machine learning models, we classify cities based on these two primary aspects—Tech Hub and Affordability—ensuring that new tech professionals have actionable insights when considering relocation decisions. The project integrates a technical approach with real-world impact, making it valuable for various stakeholders.
+This project uses a **multi-output classification model** to evaluate cities based on both Tech Hub growth and Affordability.  
 
+### **Algorithms Used:**  
+- **Logistic Regression:** Predicts Tech Hub and Affordability classifications using structured numerical data.  
+- **Decision Tree Classifier:** Handles non-linear relationships between city features and classification outcomes.  
+- **Random Forest Classifier:** Ensures accuracy and stability in city classification.  
+
+---
+
+## **8. Final Classification Categories**  
+| Tech Hub? | Affordable? | Final Classification |  
+|-----------|------------|----------------------|  
+| ✅ Yes    | ✅ Yes     | **Tech-Friendly & Affordable** |  
+| ✅ Yes    | ❌ No      | **Tech-Friendly but Expensive** |  
+| ❌ No     | ✅ Yes     | **Affordable but Not Tech-Friendly** |  
+| ❌ No     | ❌ No      | **Not Suitable** |  
+
+---
+
+## **9. Model Performance Evaluation Metrics**  
+
+For each classification model, the following metrics will be used:  
+
+- **Accuracy:** Measures the overall percentage of correct classifications.  
+- **Precision:** Assesses the reliability of positive classifications.  
+- **Recall (Sensitivity):** Evaluates how well true positives are identified.  
+- **F1 Score:** Balances precision and recall.  
+- **ROC-AUC:** Measures the model's ability to distinguish between classes.  
+- **Confusion Matrix:** Identifies classification errors.  
+
+---
+
+## **10. How Models & Metrics Drive Decision-Making**  
+
+### **Model Application:**  
+- **Tech Hub Classification Model:** Identifies cities with strong entry-level job markets.  
+- **Affordability Classification Model:** Determines financial viability for newcomers.  
+
+### **Metric-Based Decision-Making:**  
+- **Accuracy & F1 Score:** Ensure reliability of classifications.  
+- **Precision & Recall:** Help refine financial sustainability assessments.  
+- **ROC-AUC:** Validates model effectiveness.  
+- **Confusion Matrix:** Helps diagnose misclassifications.  
+
+---
+
+## **11. Summary: Data-Driven City Selection for Tech Professionals**  
+
+This project is designed to **empower entry-level tech professionals** by identifying cities that offer:  
+1. **A growing tech sector with strong job prospects.**  
+2. **Financial sustainability based on cost of living and salary.**  
+
+By leveraging **machine learning models**, we classify cities into categories that help new tech workers make informed relocation choices. This analysis bridges **real-world career decisions** with **data-driven insights**, benefiting both professionals and key stakeholders in the tech industry.  
+
+---
+
+This version ensures **better stability, clarity, and structured reasoning** while maintaining your original intent. Let me know if you’d like any refinements! 🚀
