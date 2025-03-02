@@ -56,7 +56,7 @@ Rather than a generic classification, this project evaluates cities based on the
 - **Tech City Rankings**: [Cloudwards Tech City Rankings](https://www.cloudwards.net/top-tech-cities-us/#ranking-100-u-s-cities-for-tech-professionals)  
 - **AdvisorSmith Cost of Living Data**: [AdvisorSmith Cost of Living Data](https://advisorsmith.com/data/coli)  
 - **Tech City Map**: [0sbs Tech Cities Map](https://0sbs.com/map-of-us-tech-cities/)
-- **PDF Rankings**
+- **PDF Rankings**: [PDF]([https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-state-of-the-tech-workforce-2024.pdf?sfvrsn=a8aa5246_2)
 
 ### **A. Tech Hub Factors (Entry-Level Focus)**  
 - **Job Market Data:** Availability and growth of entry-level tech jobs.  
