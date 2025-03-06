@@ -1,66 +1,84 @@
 ```python
-import pandas as pd
-import numpy as np
+iimport pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
+from sklearn.metrics import classification_report
 
-# Load datasets
-tech_data = pd.read_excel("Tech_Hub_Data.xlsx")
-affordability_data = pd.read_excel("Affordability_Data.xlsx")
+# Step 1: Load data
+df = pd.read_csv('Final_Data.csv')
 
-# Merge datasets on 'Area_Name'
-df = pd.merge(tech_data, affordability_data, on='Area_Name', how='inner')
+# Step 2: Preprocess data (you can adjust as needed)
+# Handling missing values, if any (for simplicity, let's drop rows with missing values)
+df = df.dropna(subset=['Financial_Comfort_Index', 'Tech_Friendly_Index'])
 
-# Define features (X) and targets (Y1: Tech Hub, Y2: Affordability)
-X = df.drop(columns=['Area_Name', 'Tech_Hub', 'Affordable'])
-Y1 = df['Tech_Hub']  # Binary classification (Yes/No)
-Y2 = df['Affordable']  # Binary classification (Yes/No)
+# Step 3: Define the thresholds (example thresholds, adjust as needed)
+tech_threshold = 9500  # Adjusted Tech-Friendly threshold (based on your data analysis)
+finance_threshold = 35000  # Adjusted Financial Comfort threshold (based on your data analysis)
 
-# Standardize the features
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
+# Step 4: Classify Tech Hub and Affordable columns based on thresholds
+df['Tech Hub?'] = df['Tech_Friendly_Index'].apply(lambda x: 1 if x > tech_threshold else 0)
+df['Affordable?'] = df['Financial_Comfort_Index'].apply(lambda x: 1 if x > finance_threshold else 0)
 
-# Split data into training and testing sets
-X_train, X_test, Y1_train, Y1_test = train_test_split(X_scaled, Y1, test_size=0.2, random_state=42)
-X_train, X_test, Y2_train, Y2_test = train_test_split(X_scaled, Y2, test_size=0.2, random_state=42)
+# Step 5: Define the Final Classification based on the combination of Tech Hub and Affordable
+def final_classification(row):
+    if row['Tech Hub?'] == 1 and row['Affordable?'] == 1:
+        return "Tech-Friendly & Affordable"
+    elif row['Tech Hub?'] == 1 and row['Affordable?'] == 0:
+        return "Tech-Friendly but Expensive"
+    elif row['Tech Hub?'] == 0 and row['Affordable?'] == 1:
+        return "Affordable but Not Tech-Friendly"
+    else:
+        return "Not Suitable"
 
-# Logistic Regression
-log_reg = LogisticRegression()
-log_reg.fit(X_train, Y1_train)
-Y1_pred_log = log_reg.predict(X_test)
+df['Final Classification'] = df.apply(final_classification, axis=1)
 
-# Decision Tree Classifier
-decision_tree = DecisionTreeClassifier()
-decision_tree.fit(X_train, Y1_train)
-Y1_pred_tree = decision_tree.predict(X_test)
+# Step 6: Check the distribution of the 'Final Classification' before encoding
+print("Final Classification Distribution:")
+print(df['Final Classification'].value_counts())
 
-# Random Forest Classifier
-random_forest = RandomForestClassifier(n_estimators=100, random_state=42)
-random_forest.fit(X_train, Y1_train)
-Y1_pred_forest = random_forest.predict(X_test)
+# Ensure there are at least two classes for classification
+if len(df['Final Classification'].value_counts()) < 2:
+    print("Error: Not enough classes in the target variable for classification.")
+else:
+    # Step 7: Encode the 'Final Classification' for machine learning models
+    label_encoder = LabelEncoder()
+    df['Final Classification Encoded'] = label_encoder.fit_transform(df['Final Classification'])
 
-# Evaluate models
-def evaluate_model(y_true, y_pred, model_name):
-    print(f"{model_name} Performance:")
-    print(f"Accuracy: {accuracy_score(y_true, y_pred):.4f}")
-    print(f"Precision: {precision_score(y_true, y_pred, pos_label='Yes'):.4f}")
-    print(f"Recall: {recall_score(y_true, y_pred, pos_label='Yes'):.4f}")
-    print(f"F1 Score: {f1_score(y_true, y_pred, pos_label='Yes'):.4f}")
-    print(f"Confusion Matrix:\n{confusion_matrix(y_true, y_pred)}")
-    print("----------------------------\n")
+    # Step 8: Prepare features and target variables
+    X = df[['Tech_Friendly_Index', 'Financial_Comfort_Index']]  # Features
+    y = df['Final Classification Encoded']  # Target
 
-# Evaluate Tech Hub Classification Models
-evaluate_model(Y1_test, Y1_pred_log, "Logistic Regression")
-evaluate_model(Y1_test, Y1_pred_tree, "Decision Tree")
-evaluate_model(Y1_test, Y1_pred_forest, "Random Forest")
+    # Step 9: Split the data into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-# Repeat evaluation for Affordability Classification
-evaluate_model(Y2_test, log_reg.predict(X_test), "Logistic Regression (Affordability)")
-evaluate_model(Y2_test, decision_tree.predict(X_test), "Decision Tree (Affordability)")
-evaluate_model(Y2_test, random_forest.predict(X_test), "Random Forest (Affordability)")
+    # Step 10: Train the Logistic Regression Model
+    logreg = LogisticRegression(max_iter=10000)  # max_iter increased for convergence
+    logreg.fit(X_train, y_train)
+
+    # Step 11: Make predictions and evaluate the model
+    logreg_predictions = logreg.predict(X_test)
+
+    # Print classification report for Logistic Regression
+    print("Logistic Regression Classification Report:")
+    print(classification_report(y_test, logreg_predictions))
+
+    # Step 12: Optionally train other models (Decision Tree and Random Forest)
+    # Decision Tree Classifier
+    dt_classifier = DecisionTreeClassifier(random_state=42)
+    dt_classifier.fit(X_train, y_train)
+    dt_predictions = dt_classifier.predict(X_test)
+    print("Decision Tree Classification Report:")
+    print(classification_report(y_test, dt_predictions))
+
+    # Random Forest Classifier
+    rf_classifier = RandomForestClassifier(random_state=42)
+    rf_classifier.fit(X_train, y_train)
+    rf_predictions = rf_classifier.predict(X_test)
+    print("Random Forest Classification Report:")
+    print(classification_report(y_test, rf_predictions))
+
 ```
 
